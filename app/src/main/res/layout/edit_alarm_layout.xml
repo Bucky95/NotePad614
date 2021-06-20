@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?attr/lvBackground"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:elevation="4dp"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:title="新增待办"
+        app:titleTextColor="?attr/titleColor"></android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <EditText
+            android:id="@+id/et_title"
+            android:layout_width="401dp"
+            android:layout_height="60dp"
+            android:hint="待办标题"
+            android:maxLength="20"
+            android:maxLines="1"
+            android:textColor="?attr/tvMainColor"
+            android:textSize="28dp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1.2">
+
+                <Button
+                    android:id="@+id/set_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="设置日期"
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    style="@style/centerTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="?attr/tvMainColor"
+                    android:textSize="18dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/set_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="设置时间" />
+
+                <TextView
+                    android:id="@+id/time"
+                    style="@style/centerTV"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="?attr/tvMainColor"
+                    android:textSize="18dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="393dp"
+            android:layout_height="550dp"
+            android:layout_margin="8dp"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="@string/pref_addplan"
+            android:textColor="?attr/tvMainColor"
+            android:textSize="24dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

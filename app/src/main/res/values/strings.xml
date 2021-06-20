@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Notepad614</string>
+    <string name="pref_night_summary">启用夜间模式</string>
+    <string name="pref_reversesort_summary">根据创建时间进行笔记排序</string>
+    <string name="pref_reversesort">时间排序</string>
+    <string name="pref_fabcolor_summary">更改添加按钮的颜色</string>
+    <string name="pref_fabcolor">自定义添加按钮</string>
+    <string name="pref_fabplancolor_summary">更改待办按钮的颜色</string>
+    <string name="pref_fabplancolor">自定义待办按钮</string>
+    <string name="pref_notetitle">无标题模式</string>
+    <string name="pref_notetitle_summary">取消笔记标题显示</string>
+    <string name="pref_addplan">待办内容</string>
+    <string name="set_color">按钮颜色修改</string>
+    <string name="now_color">当前颜色：</string>
+    <string name="choose_color">选择颜色：</string>
+</resources>
